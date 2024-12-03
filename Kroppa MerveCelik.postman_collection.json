@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "f702b523-ab83-4dc2-952a-64c73d694166",
+		"name": "Kroppa MerveCelik",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33194171"
+	},
+	"item": [
+		{
+			"name": "Top_Ten",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{main_url}}api/top-ten",
+					"host": [
+						"{{main_url}}api"
+					],
+					"path": [
+						"top-ten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start_Game",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"gamer@example.com\",\n    \"name\": \"Gamer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{main_url}}api/start-game",
+					"host": [
+						"{{main_url}}api"
+					],
+					"path": [
+						"start-game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "End_Game",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"game_id\": 1,\n    \"gamer_id\": 1,\n    \"score\": 850\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{main_url}}api/end-game",
+					"host": [
+						"{{main_url}}api"
+					],
+					"path": [
+						"end-game"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "main_url",
+			"value": "http://kroppa-mervecelik.test/",
+			"type": "string"
+		}
+	]
+}
