@@ -1,29 +1,29 @@
 Kurulum Rehberi
 Proje laravel herd kullanılarak yapılmıştır Herd kurulumu yapıldıktan sonra Herd klasörü altında çalışır ve url olarak klasor_adi.test URL inde çalıştırılır. Proje adı kroppa-mervecelik olarak ayarlanmıştır.
-a. Projenin Kopyalanması
+- Projenin Kopyalanması
 
 Projeyi GitHub veya bir başka platformdan çekmek için:
 
 git clone <proje-repository-URL>
 cd kroppa-mervecelik
 
-d. Veritabanı Migrasyonları ve Seed Komutları
+- Veritabanı Migrasyonları ve Seed Komutları
 
 Veritabanı tablolarını oluşturmak ve gerekli test verilerini eklemek için:
 
 php artisan migrate
 
-e. Uygulama Anahtarını Oluşturma
+- Uygulama Anahtarını Oluşturma
 
 php artisan key:generate
 
-f. Geliştirme Sunucusunu Başlatma
+- Geliştirme Sunucusunu Başlatma
 
-3. API Testi
+API Testi
 
 Postman koleksiyonu ile API’nin çalıştığını test edin.
 
-a. Postman Koleksiyonu Kullanımı
+- Postman Koleksiyonu Kullanımı
 
 Postman’i açın.
 
@@ -39,7 +39,7 @@ POST /end-game
 
 GET /top-ten
 
-b. Test Sonuçları
+- Test Sonuçları
 
 Doğru çıktıları aldığınızı kontrol edin:
 
